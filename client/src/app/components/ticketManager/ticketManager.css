@@ -1,0 +1,33 @@
+.kanban-board {
+    display: flex;
+    justify-content: space-around;
+  }
+  .kanban-column {
+    width: 25%; /* Example width */
+    padding: 10px;
+    margin: 10px;
+    height: auto;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    color: #333;
+}
+
+  .list-of-items {
+    padding: 10px;
+    border-radius: 5px;
+    min-height: 200px;
+  }
+
+  .kanban-column.todo {
+    background-color: lightblue
+  }
+
+  .kanban-column.in-progress {
+    background-color: lightyellow
+  }
+  .kanban-column.in-review {
+    background-color: lightcoral
+  }
+  .kanban-column.done {
+    background-color: lightgreen
+  }

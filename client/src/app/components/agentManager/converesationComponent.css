@@ -1,0 +1,109 @@
+    /* Message Styles */
+  .message {
+    display: flex;
+    align-items: flex-end;
+    margin-bottom: 12px;
+    color: #333; /* Dark color for text on light backgrounds */
+    padding-left: 2em; /* Adjust indentation size as needed */
+  }
+  
+  .message.user {
+    justify-content: flex-start;
+  }
+  
+  .message.assistant {
+    justify-content: flex-end;
+    color: #fff; /* White color for text on dark backgrounds */
+  }
+  
+  .message span {
+    max-width: 70%;
+    padding: 12px;
+    border-radius: 18px;
+    background: #e5e5ea;
+    color: #333;
+    font-size: 0.9rem;
+    line-height: 1.4;
+  }
+  
+  .message.assistant span {
+    background: #007bff;
+    color: #fff;
+  }
+  
+  /* Additional container for speaker's messages to add indentation */
+  .speaker-section {
+    margin-left: 20px; /* Indentation for the messages */
+  }
+  
+  /* First message of each speaker for clear separation */
+  .speaker-section .message:first-child span {
+    font-weight: bold; /* Optional: Makes the first message bold for emphasis */
+    background-color: #f0f0f0; /* Light background for the first message */
+  }
+  
+  /* Speaker tag styles */
+  .speaker-tag {
+    font-weight: bold;
+    margin-top: 1em;
+    color: #333;
+  }
+  
+  
+  /* Differentiate speaker tags by color */
+  .user-tag {
+    color: #4a90e2; /* Or any color for User */
+  }
+  
+  .assistant-tag {
+    color: #6c757d; /* Or any color for Assistant */
+  }
+  
+  /* Remove padding-left for the first message to align with the speaker tag */
+  .message.user:first-of-type,
+  .message.assistant:first-of-type {
+    padding-left: 0;
+  }
+  
+  
+  /* Styles for User messages */
+  .message.user span {
+    background-color: #d1e8ff; /* Light blue background for User messages */
+    color: #333; /* Dark text for readability */
+  }
+  
+  /* Styles for Assistant messages */
+  .message.assistant span {
+    background-color: #e5e5ea; /* Grey background for Assistant messages */
+    color: #333; /* Dark text for readability */
+  }
+  
+  /* Styles for highlighted message bubbles (first message of each speaker) */
+  .message.user.highlighted span {
+    background-color: #4a90e2; /* Darker blue background for first User message */
+  }
+  
+  .message.assistant.highlighted span {
+    background-color: #d6d6d6; /* Darker grey background for first Assistant message */
+  }
+  
+  .code-snippet {
+    background-color: #f5f5f5; /* Light grey background */
+    border-left: 3px solid #007bff; /* Blue border for emphasis */
+    padding: 1em; /* Padding inside the snippet box */
+    white-space: pre-wrap; /* Maintains formatting of whitespaces */
+    word-wrap: break-word; /* Ensures long lines don't overflow */
+    margin: 12px 0; /* Margin for separation */
+    overflow-x: auto; /* Allows scrolling on x-axis if needed */
+    font-family: 'Courier New', Courier, monospace; /* Monospaced font for code */
+  }
+  
+  
+  .markdown-content {
+    background-color: #f8f9fa; /* Light grey background for markdown */
+    border-left: 3px solid #28a745; /* Green border for emphasis */
+    padding: 1em;
+    margin: 12px 0;
+    overflow-x: auto;
+    font-family: 'Arial', sans-serif;
+  }

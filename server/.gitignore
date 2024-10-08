@@ -1,0 +1,24 @@
+# Ignore DeepSpeech and Vosk directories one level up
+../vosk
+../deepspeech
+
+# Ignore node_modules in both client and server
+/node_modules
+../client/node_modules
+
+# Ignore Excel invoices directory in server and client
+/excel/invoices
+../client/excel/invoices
+
+# Ignore environment files in client and server
+../client/.env
+/server/.env
+/server/services/.env
+../.env  # Root level .env file (one level up)
+
+# Ignore input and output directories one level up
+../file_inputs/
+../file_outputs/
+
+# Ignore models in client public directory
+../client/public/models

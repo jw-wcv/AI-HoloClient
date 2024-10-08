@@ -1,0 +1,123 @@
+.ide-container {
+    display: flex;
+    height: 90vh;
+    background-color: #f4f4f4;
+    padding: 1rem;
+    padding-bottom: 5rem;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.file-browser {
+    width: 250px;
+    background-color: #f4f4f4;
+    color: #333;
+   /* overflow-y: auto; */
+    overflow: hidden;
+    border-right: 1px solid #ddd;
+    transition: width 0.3s ease;
+    height: 88vh;
+}
+
+.editor-container {
+    flex-grow: 1;
+    overflow: hidden;
+    height: 88vh;
+}
+
+.item {
+    padding: 5px 10px;
+    cursor: pointer;
+    user-select: none;
+}
+
+.folder, .file {
+    margin-left: 10px;
+}
+
+.folder > b {
+    cursor: pointer;
+}
+
+.item:hover, .folder > b:hover {
+    background-color: #e0e0e0;
+}
+
+.collapsed {
+    width: 0;
+    overflow: hidden;
+}
+
+/* Style for the collapse/expand button */
+.toggle-btn {
+    background: #f4f4f4;
+    border: none;
+    cursor: pointer;
+    top: 50%; /* Center vertically */
+    transform: translateY(-50%); /* Center vertically */
+    z-index: 10; /* Ensure it's above other elements */
+    width: 50px; /* Width of the button */
+    height: 50px; /* Height of the button */
+    border-radius: 25px; /* Make it round */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2); /* Optional: add shadow for depth */
+    color: #333;
+    transition: background-color 0.3s, color 0.3s; /* Smooth color transition */
+}
+
+.toggle-btn:hover {
+    background-color: #e0e0e0;
+    color: #666; /* Slightly darker text on hover */
+}
+
+/* Adjust icon size if necessary */
+.toggle-btn .fa {
+    font-size: 20px; /* Adjust icon size */
+}
+
+
+
+.back-button {
+    padding: 5px 10px;
+    cursor: pointer;
+    color: #0000FF; /* Blue color text */
+    user-select: none;
+}
+
+.back-button:hover {
+    background-color: #e0e0e0;
+}
+
+.save-btn {
+    background-color: #4CAF50; /* Green background */
+    color: white; /* White text color */
+    padding: 10px 20px; /* Padding around the text */
+    border: none; /* No border */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color 0.3s, box-shadow 0.3s; /* Smooth transition for hover effects */
+    outline: none; /* Removes the outline */
+    font-weight: bold; /* Makes the text bold */
+    font-size: 16px; /* Sets a specific font size */
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for 3D effect */
+}
+
+.save-btn:hover, .save-btn:focus {
+    background-color: #45a049; /* Darker shade of green when hovered or focused */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); /* Larger shadow for a lifting effect */
+}
+
+.save-btn:active {
+    background-color: #3e8e41; /* Even darker green when button is clicked */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2); /* Slightly pressed effect */
+}
+
+.selected {
+    background-color: #0078d7; /* Blue background for selected item */
+    color: white; /* White text for contrast */
+    font-weight: bold; /* Make text bold for selected item */
+}
+
+
