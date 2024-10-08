@@ -10,6 +10,7 @@
 /# Ignore Excel invoices directory in both server and client
 /client/excel/invoices/
 /server/excel/invoices/
+/server/excel/templates/
 
 # Ignore environment files in both client and server
 /client/.env
